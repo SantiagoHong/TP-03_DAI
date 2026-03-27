@@ -1,11 +1,10 @@
-import fs from 'fs';
+import leerArchivo from './src/modules/leerArchivo.js';
+import agregarProducto from './src/modules/AgregarProd.js';
+import * as fecha from './src/modules/FechaActual.js';
+import obtenerPais from './src/modules/ObtenerPaises.js';
 
-fs.readFile('productos.json', 'utf-8', (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  const productos = JSON.parse(data);
-  console.log(productos);
-  
-});
+leerArchivo('productos.json');
+agregarProducto('Coca-cola', 150);
+fecha.fechaActual();
+fecha.horaActual();
+obtenerPais('Argentina');
