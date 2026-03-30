@@ -7,6 +7,7 @@ export default function leerArchivo(ruta) {
       return
     }
     const productos = JSON.parse(data)
+    console.log('EJERCICIO 1: Leer Archivo')
     console.log(productos)
   })
 }

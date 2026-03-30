@@ -7,6 +7,7 @@ export default function generarCSV() {
     const CSV = json2csv.parse(archivo)
 
     fs.writeFileSync('productos.csv', CSV)
+    console.log('EJERCICIO 6: Generar CSV')
     console.log('Archivo CSV generado exitosamente')
 
 }   

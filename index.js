@@ -5,6 +5,8 @@ import obtenerPais from './src/modules/ObtenerPaises.js'
 import BuscarProducto from './src/modules/buscarProducto.js'
 import generarCSV from './src/modules/generarCSV.js'
 import temportizador from './src/modules/temportizador.js'
+import AnalizarTXT from './src/modules/AnalizarTXT.js'
+import ValidarPassword from './src/modules/ValidarPassword.js'
 
 leerArchivo('productos.json')
 agregarProducto('Coca-cola', 150)
@@ -14,3 +16,5 @@ obtenerPais('Argentina')
 BuscarProducto('Teclado')
 generarCSV()  
 temportizador()
+AnalizarTXT('Hola mundo xd')
+ValidarPassword('contraseña123')

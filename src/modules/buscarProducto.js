@@ -6,6 +6,7 @@ export default function BuscarProducto(nombre) {
 
     const econtrado = list.find(producto => producto.nombre === nombre)
 
+    console.log('EJERCICIO 5: Buscar Producto')
     if (econtrado) {
         console.log('Producto encontrado')
         console.log(econtrado)

@@ -2,6 +2,7 @@ import dayjs from "dayjs"
 
 export function fechaActual() {
     const fecha = dayjs().format('DD/MM/YYYY')
+    console.log('EJERCICIO 3: Uso de librerías externas')
     console.log(fecha)
 }
 

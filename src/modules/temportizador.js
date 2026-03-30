@@ -1,5 +1,6 @@
 export default function temportizador() {
     let contador = 0;
+    console.log('EJERCICIO 7: Temporizador')
     const intervalo = setInterval(() => {
     contador++
     console.log(contador)
